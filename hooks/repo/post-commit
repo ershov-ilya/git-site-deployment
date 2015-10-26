@@ -1,5 +1,5 @@
 #!/bin/sh
 echo 
-echo "*** pushing changes to Hub [Prime's post-commit hook]"
+echo "*** Отправляем коммит в рабочую копию Hub [Public's post-commit hook]"
 echo
 git push hub
