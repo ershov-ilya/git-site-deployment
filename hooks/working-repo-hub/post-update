@@ -10,7 +10,7 @@ echo "*** Вытягиваем изменения в Prime [Hub's post-update ho
 echo
 cd $HOME/www/assets/templates/front/ || exit
 unset GIT_DIR
-git stash
-git pull -f hub master
-git stash clear
+git add -A
+git reset --hard HEAD
+git pull hub master
 exec git update-server-info
